@@ -1,0 +1,5 @@
+- name: Cấu hình teleport cluster
+  hosts: teleport_proxy_auth
+  become: yes
+  roles:
+    - teleport-service-auth-proxy

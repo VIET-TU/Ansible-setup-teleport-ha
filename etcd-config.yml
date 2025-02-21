@@ -1,0 +1,5 @@
+- name: Cấu hình etcd cluster
+  hosts: etcd_nodes
+  become: yes
+  roles:
+    - teleport-ectd

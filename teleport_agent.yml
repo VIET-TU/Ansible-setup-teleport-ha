@@ -1,0 +1,5 @@
+- name: Cấu hình teleport agent
+  hosts: teleport_node
+  become: yes
+  roles:
+    - teleport-service-nodes
